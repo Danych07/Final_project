@@ -634,7 +634,7 @@ public:
 
 void readRozdil(vector<question>& questions, vector<test>& tests, vector<rozdil>& rozdils) {
 	fstream read_rozdil;
-	read_rozdil.open("Tests.txt", fstream::in);
+	read_rozdil.open("Test.txt", fstream::in);
 	if (!read_rozdil.is_open()) cout << "Error open file\n";
 
 	
@@ -1125,11 +1125,11 @@ int main() {
 
 	// Create rozdil
 	vector<rozdil> rozdils;
-	//readRozdil(questions, tests, rozdils);
+	readRozdil(questions, tests, rozdils);
 
 
 	// Testers reading from file
-	//testersReadingFromFile(testers, tester_log);
+	testersReadingFromFile(testers, tester_log);
 
 
 
